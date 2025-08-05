@@ -9,6 +9,8 @@ pandoc report.md \
 --css="styles/styles.css"
 
 cp styles/styles.css tmp/styles.css
+cp -r assets/ tmp/assets/
+
 uv run weasyprint --stylesheet "tmp/styles.css" tmp/report.html report.pdf
 
 rm -r tmp
