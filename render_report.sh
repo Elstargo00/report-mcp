@@ -5,7 +5,7 @@ touch report.md
 
 pandoc report.md \
 --template="templates/default.html" -s -o "tmp/report.html" \
---metadata title="Donaldson SVS1 Report" \
+--metadata title="Your Report Title" \
 --css="styles/styles.css"
 
 cp styles/styles.css tmp/styles.css
