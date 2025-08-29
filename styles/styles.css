@@ -48,3 +48,28 @@ img {
     display: block;
     margin: 0 auto;
 }
+
+/* Table */
+table {
+    width: 100% !important;
+    table-layout: auto !important;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px 12px;
+    text-align: left;
+    white-space: nowrap;  /* Prevent text wrapping */
+}
+
+/* Specific column widths */
+th:nth-child(1), td:nth-child(1) { width: 25%; }
+th:nth-child(2), td:nth-child(2) { width: 25%; }
+th:nth-child(3), td:nth-child(3) { width: 25%; }
+th:nth-child(4), td:nth-child(4) { width: 25%; }
+
+/* Override Pandoc's default table styling */
+table tr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
